@@ -1,0 +1,49 @@
+body {
+  color: #222222;
+  background-color: #dddddd;
+}
+
+h1 {
+  font-family: "Impact";
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio h2 {
+  color: navy;
+}
+
+.portfolio ul {
+  list-style-type: square;
+  text-align: left;
+}
+
+#contact {
+  font-family: sans-serif;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  background-color: darkblue;
+  padding: 8px 16px;
+}
+ul.navbar li {
+  display: inline;
+  border-right: 1px solid #bbb;
+}
+ul.navbar li:last-child {
+  border-right: none;
+}
+ul.navbar li a {
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: white;
+}
+ul.navbar li a:hover {
+  background-color: lightblue;
+  color: black;
+}
