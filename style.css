@@ -5,6 +5,7 @@ body {
 
 h1 {
   font-family: "Impact";
+  margin-left: 10px;
 }
 
 .portfolio {
@@ -24,26 +25,57 @@ h1 {
   font-family: sans-serif;
 }
 
-ul.navbar {
-  list-style-type: none;
+.navbar {
   margin: 0;
   background-color: darkblue;
   padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
 }
-ul.navbar li {
-  display: inline;
-  border-right: 1px solid #bbb;
-}
-ul.navbar li:last-child {
-  border-right: none;
-}
-ul.navbar li a {
-  color: #000;
+.menu {
   padding: 8px 16px;
+}
+.menu:hover {
+  background-color: lightblue;
+}
+.menu a {
   text-decoration: none;
   color: white;
 }
-ul.navbar li a:hover {
+.menu a:hover {
   background-color: lightblue;
   color: black;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  width: 100%;
+}
+.contact-me {
+  background-color: navy;
+  padding: 10px;
+}
+.contact-me p,
+.contact-me h2,
+.contact-me a {
+  color: white;
+}
+.contact-me a:hover {
+  color: lightgray;
+}
+
+@media only screen and (min-width: 961px) {
+  .page {
+    flex-direction: row-reverse;
+  }
+  .contact-me {
+    background-color: darkgreen;
+  }
 }
